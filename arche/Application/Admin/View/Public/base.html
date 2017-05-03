@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="__PUBLIC__/semantic/semantic.min.css">
+	<script src="__PUBLIC__/jquery/jquery.min.js"></script>
+	<script src="__PUBLIC__/semantic/semantic.min.js"></script>
+  <script src="__PUBLIC__/plugin/cityselect/jquery.cityselect.js"></script>
+	<style>
+		body{padding:1rem; font-family: '微软雅黑'; background-color: #FFFAFA}
+    .top_right{float:right;}
+	</style>
+</head>
+<body>
+<div class="ui grid">
+
+<div class="row" style="background:#0d71bb; color:#fff;">
+	<div class="sixteen wide column" style="font-size:18px; padding-left:20px;text-align:center">
+		  欢迎进入学生档案管理后台&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="color:#090909;font-size:14px;font-weight:bold;">当前用户：
+				<img src="/Uploads/<{:session('loginInfo.photo')}>"/>
+				<{:session('loginUser')}>[<{:session('loginInfo.gname')}>]</a>
+            <a href="<{:U('login/index',['opt'=>'loginout'])}>" style="color:#090909;font-size:14px">退出</a>
+	</div>
+</div>
+<div class="row">
+	<div class="three wide column">
+
+      <div class="ui vertical pointing menu">
+        <volist name="navMenus" id="vo">
+          <a class="item"  href="<{:U($vo['url'])}>"><{:str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;',$vo['level'])}>
+          <i class="<{$vo.icon}> icon"></i><{$vo.name}></a>
+        </volist>
+      </div>
+
+
+	</div>
+	<div class="thirteen wide column">
+		<block name="content">
+
+		</block>
+	</div>
+</div>
+
+
+
+</div>
+</body>
+
+
+<script>
+	$('.accordion')
+  .accordion({
+    selector: {
+      trigger: '.title .icon'
+    }
+  })
+;
+
+
+  
+</script>
+
+
+
+
+</html>

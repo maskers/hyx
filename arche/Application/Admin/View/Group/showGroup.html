@@ -1,0 +1,266 @@
+<extend name="Public:base" />
+
+<block name="content">
+<!-- 添加 -->
+<button class="ui button" id="addmenu"><i class="add icon"></i>添加群组</button>
+<form id="add_fm" class="ui segment form" action="<{:U('index',['opt'=>'doAddGroup'],'')}>" method="post">
+    <!-- <h4 class="ui dividing header">添加群组</h4> -->
+	<div class="ui form">
+	  <div class="fields">
+	    <div class="four wide field">
+	      <label>群组名称</label>
+	      <input type="text" name='name' placeholder="name">
+	    </div>
+	    
+	    <div class="twelve wide field">
+	      <label>规则</label>
+	      	<div class="ui fluid multiple search normal selection dropdown" >
+			    <input type="hidden" name="rule" >
+			    <i class="dropdown icon"></i>
+			    <div class="default text">请选择规则</div>
+			    <div class="menu">
+					
+
+				    <volist name="navMenus" id="vo">
+	                    <div class="item" data-value="<{$vo.id}>">
+	                    <{:str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;',$vo['level'])}>
+	                    <i class="<{$vo.icon}> icon"></i>
+	                    <{$vo.name}>
+	                	</div>
+	            	</volist>
+
+			  	</div>
+			</div>
+	 	 </div>
+	  </div>
+        <button class="ui tiny primary button"><i class="add icon"></i>保存</button>
+	</div>
+</form>
+
+<div style="height:20px;"></div>
+
+
+
+
+
+
+<form action="<{:U('index',['opt'=>'doEditGroup'],'')}>" method="post">
+<input type="hidden" name='id' value="<{$vo.id}>">
+<table class="ui celled table">
+  <thead>
+    <tr>
+	    <th><input type="checkbox" class="ui checkbox" id="select"></th>
+	    <th>群组名称</th>
+	    <th>权限</th>
+	    <th>操作</th>
+  </tr></thead>
+  <tbody id="tbd">
+  	<volist name='groups' id='vo'>
+	    <tr id="tr_<{$vo.id}>">
+	      <td><input type="checkbox" class="ui checkbox"></td>
+	      <td>
+				<div class="ui input focus" id="td_<{$vo.id}>"><{$vo.name}></div>
+	      <td width="600px">
+
+	      	<div class="ui fluid multiple search normal selection dropdown menuGroup" >
+			    <input type="hidden" name="rule"  value="<{$vo.rule}>">
+			    <i class="dropdown icon"></i>
+			    <div class="default text">规则</div>
+			    <div class="menu">
+					
+				    <volist name="navMenus" id="v">
+	                    <div class="item" data-value="<{$v.id}>">
+	                    <{:str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;',$v['level'])}>
+	                    <i class="<{$v.icon}> icon"></i>
+	                    <{$v.name}>
+	                	</div>
+	            	</volist>
+
+			  	</div>
+			</div>
+
+
+	      </td>
+	      <td>
+	      	<div class="mini ui buttons" id="edit_<{$vo.id}>">
+			  <a class="mini ui positive button edit" id="<{$vo.id}>" href ="<{$vo.name}>">编辑</a>
+			  </form>
+			  <div class="or"></div>
+			  <a  onclick="{if(confirm('确定要删除吗?')){del('<{$vo.id}>'); }else{}}" class="mini ui negative button" >删除</a>
+			</div>
+	      </td>
+	    </tr>
+    </volist>
+  </tbody>
+  <tfoot></tfoot>
+</table>
+
+
+	<div class="blue ui buttons">
+		<div class="ui button" id='selectAll'>全选</div>
+		<div class="ui button" id='selectNone'>全不选</div>
+		<div class="ui button" id='nuSelect'>反选</div>
+
+	</div>
+<!-- 分页 -->
+<div class="small ui buttons" style="float:right; margin-right:50px;">
+	<a href="<{:U('index',['opt'=>'showGroup'],'')}>/p/<{$p-1}>"><div class="ui button"><<</div></a>
+	<for start='1' end='$pages+1' name='i'>
+		<a href="<{:U('index',['opt'=>'showGroup'],'')}>/p/<{$i}>"><div class="ui button"><{$i}></div></a>
+	</for>
+	<a href="<{:U('index',['opt'=>'showGroup'],'')}>/p/<{$p+1}>"><div class="ui button">>></div></a>
+</div>
+
+
+
+<script>
+//编辑群组
+$('.edit').click(function(){
+    var id = this.id;
+    //console.log(id);
+    var td = "#tr_"+id+" td";
+    //console.log($(/td));
+    var div = td+":eq(1) div";
+    //console.log($(div).text());
+    var html = '<div  class="ui input focus"><input type="hidden" name="id" value="'+id+'"><input type="text" class="ui checkbox" name="name" value="'+$(div).text()+'"><div>';
+    $(td).eq(1).html(html);
+    console.log($(td).eq(1));
+    console.log(html);
+    var edit_a = '#edit_'+id;
+    var edit_a = '#'+id;
+    $(edit_a).replaceWith("<button class='mini ui button' id='"+id+"'>保存</button>");
+    return false;
+})
+
+
+
+//删除选中的
+$('#delSelect').click(function(){
+	// console.log('hello');
+	var i=0;
+	var p = 0;
+	$.each($('#tbd [type=checkbox]:checked'),function(k,v){
+console.log(v);
+		i=i+1;
+		var tr = '#'+'tr_'+v.name;
+		// console.log(tr);
+		$(tr).empty();
+
+		var url="<{:U('index',['opt'=>'delGroup'],'')}>/id/"+v.name;
+		$.get(url,'',function(res){
+			console.log(res);
+			if(res==1){
+				p+=1;
+			}else{
+				//alert('删除失败');
+			}
+			if(i==p){
+				alert('删除成功');
+			}
+		});
+	})
+})
+
+
+
+// 下拉菜单
+$('.menuGroup,.dropdown').dropdown({
+	useLabels:true,
+	maxSelections:3});
+
+//下拉菜单
+// $('.dropdown').dropdown();
+
+
+
+
+//删除群组
+function del(id){
+	var tr_id = '#tr_'+id;
+	console.log(tr_id);
+	$(tr_id).empty();
+
+	var url = "<{:U('index',['opt'=>'delGroup'],'')}>/id/"+id;
+	$.get(url,'',function(res){
+		console.log(res);
+		if(res==1){
+			alert('删除成功');
+		}else{
+			alert('删除失败');
+		}
+	})
+}
+
+
+
+
+
+
+
+//添加菜单动画下拉
+$('#add_fm').hide();
+$('#addmenu').click(function(){
+	$('#add_fm').slideToggle();
+});
+
+
+
+//添加菜单验证
+$('#add_fm')
+  .form({
+    on: 'blur',
+    inline: true,
+    fields: {
+      name: {
+        identifier  : 'name',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : '{name}不能为空'
+          }
+        ]
+      },
+      rule: {
+        identifier  : 'rule',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : '{name}不能为空'
+          }
+        ]
+      },
+    
+    }
+  })
+;
+
+
+
+
+
+//全选
+$('#selectAll').click(function(){
+	$('table td [type=checkbox]').prop('checked',true);
+});
+//全不选
+$('#selectNone').click(function(){
+	$('table td [type=checkbox]').prop('checked',false);
+});
+$('#select').click(function(){
+	var status = $(this).prop('checked');
+	$('table td [type=checkbox]').prop('checked',status);
+});
+$('#nuSelect').click(function(){
+	$('table td [type=checkbox]').prop('checked',function(index,value){
+		return !$(this).prop('checked');
+	});
+});
+
+
+
+
+
+
+</script>
+
+</block>

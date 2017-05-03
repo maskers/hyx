@@ -1,0 +1,147 @@
+<extend name="Public:base" />
+
+
+<block name="content">
+ 
+    <div class="ui grid">
+        <div class="three wide column">
+            <div class="ui card">
+                <div class="image">
+                    <img src="/Uploads/<{$stu.mphoto}>">
+                </div>
+
+                <div class="content">
+                    <a class="header"><i class="<{$stu[sex]==2?'woman':'man'}> icon"></i><{$stu.sname}>[<{$stu.class}><{$stu.term}>]</a>
+                    <div class="meta">
+                        <span class="date">创建:<{$stu.ctime}></span>
+                    </div>
+                    <div class="description">
+                        <p><i class="volume control phone icon"></i><{$stu.tel}></p>
+                        <p><i class="mail outline icon"></i><{$stu.email}></p>
+                    </div>
+                </div>
+                <div class="extra content">
+                    <a href="<{:U('index',['opt'=>'mail','sid'=>$stu['sid']])}>"><i class="mail icon"></i>发送到邮箱</a>
+                    <a href="<{:U('index',['opt'=>'download','sid'=>$stu['sid']])}>"><i class="download icon"></i>导出</a>
+                </div>
+            </div>
+        </div>
+
+    <div class="thirteen wide column">
+
+    <h3 class="ui dividing header"><i class="bookmark icon"></i>扣分</h3>
+    <table class="ui celled table">
+
+        <thead>
+        <tr>
+            <th  width="2rem">
+                <div class="ui ribbon label">
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="example"><label></label>
+                    </div>
+                </div>
+            </th>
+            <th>扣分项目</th>
+            <th>分值</th>
+            <th>班级</th>
+            <th>学期</th>
+            <th>时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="deductions" id="vo">  
+            <tr>
+                <td>
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="">
+                        <label></label>
+                    </div>
+                </td>
+                <td><{$vo.rname}></td>
+                <td><{$vo.rvalue}></td>
+                <td><{$vo.class}></td>
+                <td><{$vo.term}></td>
+                <td><{$vo.ctime}></td>
+            </tr>
+            </volist>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="10">
+                <div id="pages">
+                    <volist name="desum" id="vo">
+                        <{$vo.term}>共计扣分：<b>[<{$vo.termsum}>]</b>分&nbsp;&nbsp;
+                    </volist>
+                </div>
+            </th>
+        </tr>
+        </tfoot>
+    </table>
+                
+    <h3 class="ui dividing header"><i class="bookmark icon"></i>考试</h3>
+    <table class="ui very basic collapsing celled table">
+        <thead>
+        <tr>
+            <th>考试名称</th>
+            <th>考试成绩</th>
+            <th>班级</th>
+            <th>学期</th>
+            <th>时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="exams" id="vo">
+            <tr>
+                <td><{$vo.name}></td>
+                <td>
+                    <{$vo.score}>分×<{$vo.per}>%=
+                    <b><{$vo.result}></b>分
+                </td>
+                <td><{$vo.class}></td>
+                <td><{$vo.term}></td>
+                <td><{$vo.ctime}></td>
+            </tr>
+            </volist>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="5">
+            <volist name="examsum" id='vo'>
+                <div class="ui mini statistic">
+                
+                    <div class="label"><{$vo.term}></div>
+                    <div class="value">
+                        <{$vo.perterm}>分
+                    </div>
+               
+                </div>   
+                 </volist>               
+            </th>
+        </tr>
+        </tfoot>
+    </table>
+
+<h3 class="ui dividing header"><i class="bookmark icon"></i>当前得分</h3>
+
+    <volist name="desum" id="vo">
+    <volist name="examsum" id="v">
+      <if condition="$v['term'] eq $vo['term']" >
+            <div class="ui tiny statistic">
+                <div class="label"><{$v.term}> </div>
+                <div class="value">
+                    <{$v['perterm']+$vo['termsum']}>分
+                </div>
+            </div>
+        </if>
+    </volist>
+    </volist>
+            
+
+
+
+
+
+
+
+</script>
+</block>

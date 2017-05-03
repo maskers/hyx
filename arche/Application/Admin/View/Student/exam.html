@@ -1,0 +1,149 @@
+<extend name="Public:base" />
+
+
+<block name="content">
+<!-- <{:print_r($stu)}>
+<{:print_r($deductions)}> -->
+<h3 class="ui dividing header">当前学生【<{$stu.sname}>】</h3>
+<form id="add_fm" class="ui segment form" method="post" action="<{:U('index',['opt'=>'addExam'],'')}>">
+        <h3 class="ui dividing header">添加考试成绩</h3>
+        <input name="sid" type="hidden" value="<{$stu.sid}>">
+        <input name="class" type="hidden" value="<{$stu.class}>">
+        <input name="term" type="hidden" value="<{$stu.term}>">
+        <div class="fields">
+            <div class="four wide field">
+                <label>考试名称</label>
+                <select class="ui dropdown" name="name">
+                    <volist name="examRules" id="vo">
+                        <option value="<{$vo.id}>" class="examRule" ><{$vo.name}> (<{$vo.per}>%) </option>
+                    </volist>
+                </select>
+            </div>
+            <div class="three wide field">
+                <label>分数</label>
+                <input type="number" name="score">
+            </div>
+        </div>
+
+        <button class="ui primary button save">
+            <i class="add icon"></i>
+           添加
+        </button>
+
+        <a href="<{:U('index')}>">返回</a>
+    </form>
+
+    <h4>当前学生：【<{$stu.sname}>】</h4>
+    <table class="ui celled table">
+
+        <thead>
+        <tr>
+            <th  width="2rem">
+                <div class="ui ribbon label">
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="example"><label></label>
+                    </div>
+                </div>
+            </th>
+            <th>考试名称</th>
+            <th>成绩</th>
+            <th>班级</th>
+            <th>学期</th>
+            <th>时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="exams" id="vo">  
+            <tr id="tr_<{$vo['id']}>">
+                <td>
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="">
+                        <label></label>
+                    </div>
+                </td>
+                <td><{$vo.name}></td>
+                <td><{$vo.score}>*<{$vo.per}>%=<{$vo.result}></td>
+                <td><{$vo.class}></td>
+                <td><{$vo.term}></td>
+                <td><{$vo.ctime}></td>
+                <td>
+                    <button  onclick="{if(confirm('确定要删除吗?')){del('<{$vo.id}>'); }else{}}" class="mini ui negative button" id="delExam">删除</button>
+                </td>
+            </tr>
+            </volist>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="10">
+                <div id="pages">
+                    <volist name="examsum" id="vo">
+                        <{$vo.term}>考试成绩：<b>[<{$vo.perterm}>]</b>分&nbsp;
+                    </volist>
+                </div>
+            </th>
+        </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+<script>
+$('.dropdown').dropdown();
+
+//删除考试
+function del(id){
+    var tr_id = '#tr_'+id;
+  //  console.log(tr_id);
+
+
+    var url = "<{:U('index',['opt'=>'delExam'],'')}>/id/"+id;
+    $.get(url,'',function(res){
+        console.log(res);
+        if(res==1){
+            $(tr_id).empty();
+
+            alert('删除成功');
+        }else{
+            alert('删除失败');
+        }
+    })
+}
+
+$('#add_fm').form({
+    on: 'blur',
+    inline: true,
+    fields:{
+    score: {
+        identifier: 'score',
+        rules: [
+            {
+                type: 'empty',
+                prompt: '{name}不能为空！'
+            },
+            {
+                type   : 'integer[0..100]',
+                prompt : '{name}1-100数字！'
+            },
+        ]
+    },
+  }
+});
+
+
+
+$('.examRule').each(function(k,v){
+    // console.log(v);
+    if(jQuery.inArray(v.value,'<{$stuexams}>')!='-1'){
+        $(v).prop('disabled','true');
+    }
+});
+
+
+</script>
+
+
+
+</block>

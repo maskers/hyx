@@ -1,0 +1,267 @@
+<extend name="Public:base" />
+
+<block name="content">
+
+<!-- 添加 -->
+<!-- <button class="ui button" id="addstudent"><i class="add icon"></i>添加老师</button> -->
+<form id="add_fm" class="ui segment form" action="<{:U('index',['opt'=>'doAddStudent'],'')}>" method="post" enctype='multipart/form-data'>
+    <h4 class="ui dividing header">添加学生</h4>
+	<div class="ui form">
+	  <div class="fields">
+	    <div class="four wide field">
+	      <label>姓名</label>
+	      <input type="text" name='sname' placeholder="name">
+	    </div>
+	    <div class="four wide field">
+	      <label>手机</label>
+	      <input type="text" name='tel' placeholder="tel">
+	    </div>
+	    <div class="four wide field">
+	      <label>邮箱</label>
+	      <input type="text" name='email' placeholder="email">
+	    </div>
+	    <div class="four wide field">
+	      <label>性别</label>
+	      <select class="ui dropdown" name="sex">
+            <volist name="sexs" id="vo">
+                <option value="<{$vo.value}>" ><{$vo.name}></option>
+            </volist>
+          </select>
+	    </div>
+	  </div>
+
+	  <div class="fields">
+        <div class="four wide field">
+            <label>密码</label>
+            <input type="password" name="pwd">
+        </div>
+        <div class="four wide field">
+            <label>确认密码</label>
+            <input type="password" name="pwd2">
+        </div>
+        <div class="four wide field">
+            <label>班级</label>
+            <select class="ui dropdown" name="class">
+                <volist name="class" id="vo">
+                    <option value="<{$vo.value}>"><{$vo.name}></option>
+                </volist>
+            </select>
+        </div>
+        <div class="four wide field">
+            <label>学期</label>
+            <select class="ui dropdown" name="term">
+                <volist name="term" id="vo">
+                    <option value="<{$vo.value}>"><{$vo.name}></option>
+                </volist>
+            </select>
+        </div>
+      </div>
+
+      <div class="fields">
+	    <div class="four wide field">
+            <label>身份证</label>
+            <input type="text" name="id_card">
+        </div>
+        <div class="four wide field">
+            <label>年龄</label>
+            <input type="text" name="age">
+        </div>
+        <div class="four wide field">
+            <label>qq</label>
+            <input type="text" name="qq">
+        </div>
+        <div class="four wide field">
+
+        </div>
+        
+	  </div>
+
+      <div class="fields">
+          <div class="four wide field">
+              <label>头像</label>
+              <input type="file" name="file" value="">
+          </div>
+      </div>
+      <div class="fields">
+        <label style="font-size:16px;font-weight:bold;">家庭住址：</label>
+      </div>
+      <div class="fields" id="city">
+         <div class="three wide field">
+              <label>省</label>
+              <select class="prov" name="prov" ></select>  
+         </div>
+         <div class="three wide field">
+              <label>市</label>
+              <select class="city" name="city" disabled="disabled"></select> 
+         </div>
+         <div class="three wide field">
+              <label>县</label>
+              <select class="dist" name="dist" disabled="disabled"></select> 
+         </div>
+      </div>
+      <div class="fields">
+        <div class="eight wide field">
+            <label>详细地址</label>
+            <input type="text" name="addr">
+        </div>
+      </div>
+
+      <div class="fields">
+        <div class="four wide field">
+            <label>毕业院校</label>
+            <input type="text" name="school">
+        </div>
+        <div class="four wide field">
+            <label>专业</label>
+            <input type="text" name="major">
+        </div>
+        <div class="four wide field">
+            <label>毕业时间</label>
+            <input type="date" name="gra_time">
+        </div>
+        <div class="four wide field">
+            <label>学历</label>
+            <select class="ui dropdown" name="education">
+                <volist name="education" id="vo">
+                    <option value="<{$vo.value}>"><{$vo.name}></option>
+                </volist>
+            </select>
+        </div>
+      </div>
+        <button class="ui tiny primary button"><i class="add icon"></i>添加</button>
+	</div>
+</form>
+
+
+<script>
+$('.dropdown').dropdown();
+
+//地市联动
+$('#city').citySelect({
+    url:'/Public/plugin/cityselect/city.min.js',
+    nodata:"none",//隐藏无数据的子级select
+    required:true,
+     prov:"江苏",
+     city:"南京",
+     dist:"白下区",
+});
+
+
+
+//验证添加表单
+$.fn.form.existFlag = false;
+$.fn.form.settings.rules.exist = function(value,param) {
+    $.ajax({
+        url:'<{:U("index",["opt"=>"same"])}>',
+        data:{field:param,value:value},
+        async:true,
+        success:function (data) {
+            $.fn.form.existFlag = data;
+        }
+    });
+    return !$.fn.form.existFlag;
+};
+
+$('#add_fm').form({
+    on: 'blur',
+    inline: true,
+    fields:{
+    sname: {
+        identifier: 'sname',
+        rules: [
+            {
+                type: 'empty',
+                prompt: '{name}不能为空！'
+            },
+            {
+                type: 'regExp',
+                value: '/^[^\u0000-\u00FF]{2,6}$/',
+                prompt : '{name}必须2-6位汉字！'
+            },
+            {
+                type: 'exist[name]',
+                prompt : '{name}已经存在！'
+            },
+        ]
+    },
+
+    tel: {
+        identifier: 'tel',
+        rules: [
+            {
+                type: 'empty',
+                prompt: '{name}不能为空！'
+            },
+            {
+                type: 'regExp',
+                value: '/^1[3|4|5|8][0-9]\\d{8,8}$/',
+                prompt : '{name}号非法！'
+            },
+            {
+                type: 'exist',
+                value:'tel',
+                prompt : '{name}已经存在！'
+            },
+        ]
+    },
+
+    age: {
+        identifier: 'age',
+        rules: [
+            {
+                type: 'regExp',
+                value: '/^(1[89]|[2-8][0-9]|90)$/',
+                prompt : '{name}号非法！'
+            },
+        ]
+    },
+
+    email: {
+        identifier: 'email',
+        rules: [
+            {
+                type: 'empty',
+                prompt: '{name}不能为空！'
+            },
+            {
+                type: 'email',
+                prompt : '{name}非法！'
+            },
+            {
+                type: 'exist[email]',
+                prompt : '{name}已经存在！'
+            },
+        ]
+    },
+
+    pwd: {
+        identifier: 'pwd',
+        rules: [
+            {
+                type: 'empty',
+                prompt: '{name}不能为空！'
+            },
+            {
+                type: 'regExp',
+                value: '/^[A-Za-z0-9]{6,20}$/',
+                prompt : '{name}只能6-20位字母数字组合 ！'
+            },
+        ]
+    },
+
+    match: {
+        identifier  : 'pwd2',
+        rules: [
+          {
+            type   : 'match[pwd]',
+            prompt : '两次密码输入不一致'
+          }
+        ]
+    },
+  }
+});
+
+
+
+</script>
+</block>

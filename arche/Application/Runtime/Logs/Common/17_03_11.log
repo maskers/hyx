@@ -1,0 +1,18 @@
+[ 2017-03-11T10:38:40+08:00 ] 127.0.0.1 /index.php/uploads/2017-03-09/58c100e093edc.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-03-11T10:39:10+08:00 ] 127.0.0.1 /index.php/Uploads/2017-03-09/58c113d31bac5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-03-11T13:41:59+08:00 ] 127.0.0.1 /index.php/Uploads/2017-03-09/58c0cb3e2d028.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Uploads
+

@@ -1,0 +1,3561 @@
+[ 2017-02-27T08:50:08+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.5520s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.3920s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-27T08:51:05+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-02-27T08:51:38+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/delMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 0 LIMIT 1   [ RunTime:0.1560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-27T08:52:05+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0070s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T08:52:11+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/delMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-27T08:52:18+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.186010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-02-27T08:53:41+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-27T08:55:03+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/delMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2017-02-27T08:58:25+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013001s ]
+
+[ 2017-02-27T08:58:30+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/delMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2017-02-27T08:58:41+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/delMenu/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-27T08:58:50+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/delMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-02-27T09:00:17+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027001s ]
+
+[ 2017-02-27T09:00:39+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doAddMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ts_menu` (`name`,`icon`,`url`,`sort`,`pid`,`status`) VALUES ('xs','xx','xx','1','6','1') [ RunTime:0.2860s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2017-02-27T09:00:41+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014001s ]
+
+[ 2017-02-27T09:00:51+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/delMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `ts_menu` WHERE `id` = 7 [ RunTime:0.5320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2017-02-27T09:00:57+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-02-27T09:01:07+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0030s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011000s ]
+
+[ 2017-02-27T09:04:46+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020001s ]
+
+[ 2017-02-27T09:05:31+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.181011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.181011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.085005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.086005s ]
+
+[ 2017-02-27T09:07:25+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.011000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.200011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.200011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020002s ]
+
+[ 2017-02-27T09:08:40+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2017-02-27T09:10:08+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.1180s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.176010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.176010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-02-27T09:13:05+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T10:16:50+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.1540s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0150s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.036002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.054003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.054003s ]
+
+[ 2017-02-27T11:14:11+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.1390s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2017-02-27T11:14:24+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.049003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.051003s ]
+
+[ 2017-02-27T11:14:51+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0040s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T11:15:13+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.017001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.190011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T11:15:17+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0040s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.011000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.011000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-02-27T11:15:33+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T19:28:26+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.471027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.067003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.069003s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:2.2391s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.2810s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:2.8702s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:1.3141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.109006s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.110006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:3.246186s ]
+INFO: [ view_parse ] --END-- [ RunTime:3.249186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.116007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.120007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.063003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.064003s ]
+
+[ 2017-02-27T19:28:27+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.472027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.066003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.068003s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.280016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.280016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2017-02-27T19:32:11+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.1300s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0030s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.427025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.429025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.059003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.061003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.037002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.039002s ]
+
+[ 2017-02-27T19:32:31+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.1480s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.168009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.170009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.076004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.077004s ]
+
+[ 2017-02-27T19:35:52+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.1960s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.254014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.255014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.033002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.267015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.269015s ]
+
+[ 2017-02-27T19:36:04+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2017-02-27T19:37:44+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T19:40:33+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.055003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0080s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.216012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.218012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.146008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.146008s ]
+
+[ 2017-02-27T19:40:56+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0030s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014001s ]
+
+[ 2017-02-27T19:41:23+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T19:41:32+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2017-02-27T19:52:56+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.077005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.079005s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0820s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.386022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.388023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.086005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.087005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.055003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.056003s ]
+
+[ 2017-02-27T19:57:44+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.009000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.337019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.338019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.042002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.045003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.157009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.158009s ]
+
+[ 2017-02-27T19:57:52+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.1100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.2800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T19:59:28+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015001s ]
+
+[ 2017-02-27T19:59:33+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.1100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 5 LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2017-02-27T20:01:43+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.7850s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.9821s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.167010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020001s ]
+
+[ 2017-02-27T20:02:33+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.155008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.155008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T20:02:38+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T20:06:57+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.4270s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.3220s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.794046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.798046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010001s ]
+
+[ 2017-02-27T20:08:01+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T20:21:04+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.051003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.063004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.064004s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.243014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.244014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.045003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.047003s ]
+
+[ 2017-02-27T20:21:09+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T20:21:22+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T20:23:07+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.1840s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.368021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.369022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.043002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.044002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.054003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.055003s ]
+
+[ 2017-02-27T20:23:09+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T20:24:10+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.252015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.253015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T20:24:13+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-27T20:24:24+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.6640s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.2130s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T20:25:08+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.294017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.295017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.041002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.042002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2017-02-27T20:25:11+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-27T20:25:39+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.208012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.209012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021001s ]
+
+[ 2017-02-27T20:25:42+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T20:26:04+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.218013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.218013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015001s ]
+
+[ 2017-02-27T20:26:06+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-02-27T20:26:30+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.287016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.288016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017001s ]
+
+[ 2017-02-27T20:26:35+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T20:28:53+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.391022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.393022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.063004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.066004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.077004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.078004s ]
+
+[ 2017-02-27T20:28:58+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T20:29:07+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.167010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T20:29:53+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T20:30:25+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T20:32:30+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021001s ]
+
+[ 2017-02-27T20:32:31+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T20:32:50+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T21:04:20+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.125008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.1000s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.093005s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.095005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:3.440197s ]
+INFO: [ view_parse ] --END-- [ RunTime:3.441197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.043003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.045003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.099005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.099005s ]
+
+[ 2017-02-27T21:05:26+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-27T21:09:57+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.037002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.039002s ]
+
+[ 2017-02-27T21:10:02+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T21:11:34+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-27T21:12:22+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.038002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.046003s ]
+
+[ 2017-02-27T21:12:27+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T21:13:01+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T21:13:07+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T21:19:22+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-27T21:19:42+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.078005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.080005s ]
+
+[ 2017-02-27T21:19:44+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T21:20:00+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doAddMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `ts_menu` (`name`,`icon`,`url`,`sort`,`pid`,`status`) VALUES ('x','x','x','1','6','2') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T21:20:02+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-02-27T21:20:05+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T21:20:15+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.083005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.083005s ]
+
+[ 2017-02-27T21:20:17+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-27T21:20:49+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2017-02-27T22:03:24+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-27T22:03:52+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-27T22:03:55+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:04:13+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-27T22:04:19+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:04:40+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.137008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2017-02-27T22:04:44+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:08:14+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wwwroot\138\arche\Application\Runtime\Cache\Admin\3774e187e40a8334af70e455357c8565.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2017-02-27T22:08:17+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:08:39+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:08:46+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:09:06+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.093005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.095006s ]
+
+[ 2017-02-27T22:09:09+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-27T22:11:30+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:11:33+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:12:01+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:12:03+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:12:06+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-02-27T22:12:29+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:12:35+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:13:27+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.178010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-02-27T22:13:29+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:13:38+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.064004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.064004s ]
+
+[ 2017-02-27T22:13:40+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T22:14:14+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:14:24+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:14:36+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-02-27T22:14:51+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:16:32+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:16:35+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:16:38+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:20:39+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:32:51+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-02-27T22:35:13+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:35:49+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-02-27T22:35:52+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:36:56+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T22:37:39+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T22:37:41+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:38:10+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-02-27T22:38:12+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-27T22:38:58+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014001s ]
+
+[ 2017-02-27T22:39:31+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014001s ]
+
+[ 2017-02-27T22:39:33+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-02-27T22:40:20+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:41:31+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.033002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.062003s ]
+
+[ 2017-02-27T22:41:35+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:44:49+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-02-27T22:44:51+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:45:40+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ts_menu` SET `name`='x',`icon`='x',`url`='x',`sort`='1',`pid`='6' WHERE `id` = 7 [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:45:42+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/shoeMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:45:50+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:45:55+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ts_menu` SET `name`='x',`icon`='x',`url`='x',`sort`='1',`pid`='0' WHERE `id` = 7 [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:45:56+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/shoeMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:46:02+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:47:32+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/shoeMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.041003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.041003s ]
+
+[ 2017-02-27T22:49:23+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/shoeMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T22:50:00+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/shoeMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021002s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:51:24+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/shoeMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-27T22:51:34+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/shoeMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.157009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016001s ]
+
+[ 2017-02-27T22:51:45+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:52:57+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/shoeMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2017-02-27T22:53:00+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:54:42+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/shoeMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018001s ]
+
+[ 2017-02-27T22:54:50+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:55:12+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:55:19+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ts_menu` SET `name`='系统管理',`icon`='sun',`url`='Admin/Sys/index',`sort`='1',`pid`='0' WHERE `id` = 1 [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:55:20+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:55:28+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:55:33+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ts_menu` SET `name`='x',`icon`='x',`url`='x',`sort`='1',`pid`='0' WHERE `id` = 7 [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:55:34+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-27T22:55:38+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-27T22:55:42+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.011001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ts_menu` SET `name`='x',`icon`='x',`url`='x',`sort`='1',`pid`='0' WHERE `id` = 7 [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:55:44+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.055003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.055003s ]
+
+[ 2017-02-27T22:55:58+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-27T22:56:02+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ts_menu` SET `name`='x',`icon`='x',`url`='x',`sort`='1',`pid`='0' WHERE `id` = 7 [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:56:03+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-02-27T22:56:06+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/editMenu/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ts_menu` WHERE `pid` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:56:10+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/doEditMenu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\138\arche\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ts_menu` SET `name`='x',`icon`='x',`url`='x',`sort`='1',`pid`='0' WHERE `id` = 7 [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-27T22:56:12+08:00 ] 127.0.0.1 /138/arche/index.php/Admin/Menu/index/opt/showMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_menu` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `ts_dict` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ts_dict` WHERE `field` = 'status'  [ RunTime:0.0010s ]
+SQL: SELECT m.id,m.name,m.pid,`url`,`sort`,`icon`,di.name AS `status` FROM ts_menu m INNER JOIN ts_dict di on di.field="status" and m.status=di.value    [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

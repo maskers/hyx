@@ -1,0 +1,113 @@
+<extend name="Public:base" />
+
+
+<block name="content">
+<!-- <{:print_r($stu)}>
+<{:print_r($deductions)}> -->
+<form id="add_fm" class="ui segment form" method="post" action="<{:U('index',['opt'=>'addDeduction'],'')}>">
+        <h4 class="ui dividing header">扣分【<{$stu.sname}>】</h4>
+        <input name="sid" type="hidden" value="<{$stu.sid}>">
+        <input name="class" type="hidden" value="<{$stu.class}>">
+        <input name="term" type="hidden" value="<{$stu.term}>">
+        <div class="fields">
+            <div class="four wide field">
+                <label>选择扣分项</label>
+                <select class="ui dropdown" name="rid">
+                    <volist name="derules" id="vo">
+                        <option value="<{$vo.id}>"><{$vo.name}> [<{$vo.value}>分] </option>
+                    </volist>                
+                </select>
+            </div>
+        </div>
+
+        <button class="ui primary button save">
+            <i class="remove icon"></i>
+            扣分
+        </button>
+
+        <a href="<{:U('index')}>">返回</a>
+    </form>
+
+    <h4>当前学生：【<{$stu.sname}>】</h4>
+    <table class="ui celled table">
+
+        <thead>
+        <tr>
+            <th  width="2rem">
+                <div class="ui ribbon label">
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="example"><label></label>
+                    </div>
+                </div>
+            </th>
+            <th>扣分项目</th>
+            <th>分值</th>
+            <th>班级</th>
+            <th>学期</th>
+            <th>时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="deductions" id="vo">  
+            <tr id="tr_<{$vo.id}>">
+                <td>
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="">
+                        <label></label>
+                    </div>
+                </td>
+                <td><{$vo.rname}></td>
+                <td><{$vo.rvalue}></td>
+                <td><{$vo.class}></td>
+                <td><{$vo.term}></td>
+                <td><{$vo.ctime}></td>
+                <td>
+                    <!-- <a href="<{:U('index',['opt'=>'delExam'],'')}>/id/<{$vo[id]}>">[删除]</a>-->
+                   <button  onclick="{if(confirm('确定要删除吗?')){del('<{$vo.id}>'); }else{}}" class="mini ui negative button" id="deldeduction">删除</button>
+                </td>
+            </tr>
+            </volist>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="10">
+                <div id="pages">
+                    <volist name="desum" id="vo">
+                    <if condition="$vo['term']==1">
+                       <{$vo.term}>共计扣分：<b>[<{$vo.termsum}>]</b>分&nbsp;&nbsp;
+                    </volist>
+                </div>
+            </th>
+        </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+<script>
+$('.dropdown').dropdown();
+
+//删除扣分
+function del(id){
+    var tr_id = '#tr_'+id;
+    // console.log(tr_id);
+    
+
+    var url = "<{:U('index',['opt'=>'delDeduction'],'')}>/id/"+id;
+    $.get(url,'',function(res){
+        console.log(res);
+        if(res==1){
+            $(tr_id).empty();
+            
+            alert('删除成功');
+        }else{
+            alert('删除失败');
+        }
+    })
+}
+
+</script>
+</block>

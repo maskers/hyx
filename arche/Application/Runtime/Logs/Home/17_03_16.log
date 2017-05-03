@@ -1,0 +1,267 @@
+[ 2017-03-16T16:28:16+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-16T16:32:09+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-16T22:05:14+08:00 ] 127.0.0.1 /index.php/Home/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-16T22:05:14+08:00 ] 127.0.0.1 /index.php/Home/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-16T22:05:14+08:00 ] 127.0.0.1 /index.php/Home/polina.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-16T22:05:14+08:00 ] 127.0.0.1 /index.php/Home/js/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Js
+
+[ 2017-03-16T22:05:38+08:00 ] 127.0.0.1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0110s ]
+ERR: 非法操作:login
+
+[ 2017-03-16T22:05:49+08:00 ] 127.0.0.1 /index.php/Home/Login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-16T22:05:49+08:00 ] 127.0.0.1 /index.php/Home/Login/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0120s ]
+ERR: 非法操作:css
+
+[ 2017-03-16T22:05:49+08:00 ] 127.0.0.1 /index.php/Home/Login/polina.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-16T22:05:49+08:00 ] 127.0.0.1 /index.php/Home/Login/js/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0120s ]
+ERR: 非法操作:js
+
+[ 2017-03-16T22:06:54+08:00 ] 127.0.0.1 /index.php/Home/Login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-16T22:07:24+08:00 ] 127.0.0.1 /index.php/Home/Login/index/opt/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0110s ]
+ERR: 1054:Champ 't.name' inconnu dans field list
+ [ SQL语句 ] : SELECT t.name AS `name`,g.name AS `gname`,g.rule AS `rule`,t.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.name = '刘备' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+ERR: 1054:Champ 't.name' inconnu dans field list
+ [ SQL语句 ] : SELECT t.name AS `name`,g.name AS `gname`,g.rule AS `rule`,t.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.name = '刘备' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+
+[ 2017-03-16T22:10:21+08:00 ] 127.0.0.1 /index.php/Home/Login/index/opt/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0130s ]
+ERR: 1054:Champ 'g.sname' inconnu dans field list
+ [ SQL语句 ] : SELECT t.sname AS `name`,g.sname AS `gname`,g.group AS `group`,t.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.sname = '刘备' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+ERR: 1054:Champ 'g.sname' inconnu dans field list
+ [ SQL语句 ] : SELECT t.sname AS `name`,g.sname AS `gname`,g.group AS `group`,t.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.sname = '刘备' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+
+[ 2017-03-16T22:11:12+08:00 ] 127.0.0.1 /index.php/Home/Login/index/opt/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0100s ]
+ERR: 1054:Champ 't.name' inconnu dans field list
+ [ SQL语句 ] : SELECT t.name AS `sname`,g.name AS `gname`,g.group AS `group`,t.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.name = '' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+ERR: 1054:Champ 't.name' inconnu dans field list
+ [ SQL语句 ] : SELECT t.name AS `sname`,g.name AS `gname`,g.group AS `group`,t.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.name = '' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+
+[ 2017-03-16T22:19:56+08:00 ] 127.0.0.1 /index.php/Home/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-16T22:20:02+08:00 ] 127.0.0.1 /index.php/Home/Login/index/opt/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0110s ]
+ERR: 1054:Champ 't.name' inconnu dans field list
+ [ SQL语句 ] : SELECT t.name AS `name`,g.name AS `gname`,g.group AS `group`,t.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.name = '刘备' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+ERR: 1054:Champ 't.name' inconnu dans field list
+ [ SQL语句 ] : SELECT t.name AS `name`,g.name AS `gname`,g.group AS `group`,t.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.name = '刘备' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+
+[ 2017-03-16T22:23:20+08:00 ] 127.0.0.1 /index.php/Home/Login/index/opt/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0140s ]
+ERR: 1054:Champ 't.name' inconnu dans field list
+ [ SQL语句 ] : SELECT t.name AS `name`,g.name AS `gname`,g.group AS `group`,t.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.name = '刘备' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+ERR: 1054:Champ 't.name' inconnu dans field list
+ [ SQL语句 ] : SELECT t.name AS `name`,g.name AS `gname`,g.group AS `group`,t.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.name = '刘备' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+
+[ 2017-03-16T22:24:09+08:00 ] 127.0.0.1 /index.php/Home/Login/index/opt/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0100s ]
+ERR: 1054:Champ 't.name' inconnu dans field list
+ [ SQL语句 ] : SELECT t.name AS `name` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.name = '刘备' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+ERR: 1054:Champ 't.name' inconnu dans field list
+ [ SQL语句 ] : SELECT t.name AS `name` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE t.name = '刘备' AND t.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+
+[ 2017-03-16T22:24:40+08:00 ] 127.0.0.1 /index.php/Home/Login/index/opt/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ts_student` [ RunTime:0.0120s ]
+ERR: 1054:Champ 's.name' inconnu dans field list
+ [ SQL语句 ] : SELECT s.name AS `name`,g.name AS `gname`,g.group AS `group`,s.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE s.name = '刘备' AND s.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+ERR: 1054:Champ 's.name' inconnu dans field list
+ [ SQL语句 ] : SELECT s.name AS `name`,g.name AS `gname`,g.group AS `group`,s.sphoto AS `photo` FROM ts_student t INNER JOIN ts_group g on t.group=g.id  WHERE s.name = '刘备' AND s.pwd = '96e79218965eb72c92a549dd5a330112' LIMIT 1  
+
